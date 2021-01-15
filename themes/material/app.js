@@ -158,6 +158,9 @@ function list_files(path,files){
 	          <div class="mdui-col-sm-2 mdui-text-right">${item['size']}</div>
 	          </a>
 	      </li>`;
+	   if(item.thumbnailLink){
+	      html = html.replaceAll(`<i class="mdui-icon material-icons">insert_drive_file</i>`, thumbnail);
+	   }
         }
     }
     $('#list').html(html);
