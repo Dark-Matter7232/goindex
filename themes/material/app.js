@@ -159,6 +159,7 @@ function list_files(path,files){
 	          </a>
 	      </li>`;
 	   if(item.thumbnailLink){
+	      var thumbnail = `<img src="${item.thumbnailLink}">`;
 	      html = html.replaceAll(`<i class="mdui-icon material-icons">insert_drive_file</i>`, thumbnail);
 	   }
         }
