@@ -7,6 +7,10 @@ th{font-weight:700}
 .file-name{text-align:left}
 .file-type{text-align:center}
 .file-size{padding-left:4em}
+.file-date-created,
+.file-date-modified{padding-left:2em}
+.file-date-created,
+.file-date-modified,
 .file-size{text-align:end;white-space:nowrap}
 .icon{padding-left:1.5em;text-decoration:none}
 .icon:hover{text-decoration:underline}
@@ -77,7 +81,7 @@ function nav(path){
 // 渲染文件列表
 function list(path){
 	var content = `
-<tr><th class="file-name">Name</th><th class="file-size">Size</th><th class="file-date-modified">Date Modified</th><th class="file-type">Type</th></tr>
+<tr><th class="file-name">Name</th><th class="file-type">Type</th></tr>
 	`;
 
 	if(path != '/'){
@@ -89,8 +93,6 @@ function list(path){
 	<td class="file-name">
 		<a class="icon icon-up folder" href="${up}">..</a>
 	</td>
-	<td class="file-size"></td>
-	<td class="file-date-modified"></td>
 </tr>
 		`;	
 	}
@@ -123,8 +125,6 @@ function list_files(path,files){
         if(item['size']==undefined){
             item['size'] = "";
         }
-        item['modifiedTime'] = utc2beijing(item['modifiedTime']);
-        item['size'] = formatFileSize(item['size']);
         if(item['mimeType'] == 'application/vnd.google-apps.folder'){
         	var p = path+item.name+'/';
             html +=`
