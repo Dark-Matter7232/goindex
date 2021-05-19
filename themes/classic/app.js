@@ -130,7 +130,7 @@ function list_files(path,files){
             html +=`
 				<tr>
 					<td class="file-name"><a class="icon icon-dir folder" href="${p}">${item.name}/</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 				</tr>
             `;
@@ -139,7 +139,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-mid" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -149,7 +149,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-audio" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -159,7 +159,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-image" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
                     <td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -169,7 +169,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-video" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -179,7 +179,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-7z" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -189,7 +189,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-zip" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -199,7 +199,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-text" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -209,7 +209,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-xml" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -219,7 +219,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-rar" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -229,7 +229,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-html" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -239,7 +239,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-pdf" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
                     <td class="file-date-modified">${item['mimeType']}</td>
                     <td class="file-date-modified">${item['iconLink']}</td>
@@ -250,7 +250,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-md" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -260,7 +260,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-bat" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -270,7 +270,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-x-msdownload" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -280,7 +280,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-application/x-bittorrent" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
@@ -290,7 +290,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-google.spreadsheet" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
                     <td class="file-date-modified">application/google.spreadsheet</td>
                     <td class="file-date-modified">${item['iconLink']}</td>
@@ -302,7 +302,7 @@ function list_files(path,files){
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-google.presentation" href="${p}">${item.name}</a></td>
-					<td class="file-size">${item['size']}</td>
+					
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">application/google.presentation</td>
 				</tr>
